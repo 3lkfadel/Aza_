@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to left, #E9BCAC, #ab9dd4);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.header {
+    font-size: large;
+    color: gold;
+}
+
+.menu .signin {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu .signin:hover {
+    background-color: #fff;
+    color: #ab9dd4;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-right: 40px;
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    color: gold;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.section1, .section3 {
+    width: 30%;
+}
+
+.sectionImage {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.div_sect_1 {
+    font-size: xx-large;
+    color: gold;
+    margin-left: 20px;
+}
+
+.div_sect_2 {
+    font-size: medium;
+    color: gold;
+    margin-left: 20px;
+}
+
+.div_sect_3 {
+    color: gold;
+    margin-left: 20px;
+}
+
+.p1, .p2, .p3 {
+    color: gold;
+    margin-left: 20px;
+}
+
+.section3 {
+    position: flex;
+    margin-left: 30px;
+   
+}
+
+.section3 a {
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.section3 a:hover {
+    transform: scale(1.1);
+    color: gold;
+}
+
+/* Ajustements pour les écrans plus petits */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .section1, .sectionImage, .section3 {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
